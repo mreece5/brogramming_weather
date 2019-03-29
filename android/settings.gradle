@@ -1,0 +1,3 @@
+rootProject.name = 'brogramming_weather'
+
+include ':app'
