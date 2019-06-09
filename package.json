@@ -8,9 +8,13 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "create-react-app": "^3.0.1",
+    "prop-types": "^15.7.2",
     "react": "16.8.3",
     "react-native": "0.59.2",
-    "react-native-cli": "^2.0.1"
+    "react-native-cli": "^2.0.1",
+    "react-native-vector-icons": "^6.5.0",
+    "yarn": "^1.16.0"
   },
   "devDependencies": {
     "@babel/core": "7.4.0",
