@@ -40,12 +40,53 @@ export const weatherConditions = {
       color: '#66A6FF',
       title: 'Haze',
       subtitle: 'Another name for Partial Raining',
-      icon: 'wb-hail'
+      icon: 'waves'
     },
     Mist: {
       color: '#3CD3AD',
       title: 'Mist',
       subtitle: "Don't roam in forests!",
       icon: 'weather-fog'
-    }
+    },
+    Smoke: {
+      color: '#C7C6CC',
+      title: 'Smoke',
+      subtitle: 'Only you can prevent forest fires',
+      icon: 'smog'
+    },
+
+    Dust: {
+      color: '#9A5331',
+      title: 'Dust',
+      subtitle: 'Only you can prevent forest fires',
+      icon: 'zodiac-aquarius'
+    },
+
+    Sand: {
+      color: '#735331',
+      title: 'Sand',
+      subtitle: 'Only you can prevent forest fires',
+      icon: 'hexagon-multiple'
+    },
+
+    Ash: {
+      color: '#323232',
+      title: 'Ash',
+      subtitle: 'Only you can prevent forest fires',
+      icon: 'nuke'
+    },
+
+    Squall: {
+      color: '#7500FF',
+      title: 'Squall',
+      subtitle: 'Only you can prevent forest fires',
+      icon: 'weather-windy'
+    },
+
+    Tornado: {
+      color: '#FF0000',
+      title: 'Tornado',
+      subtitle: 'Only you can prevent forest fires',
+      icon: 'skull-crossbones'
+    },
   };

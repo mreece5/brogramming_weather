@@ -7,7 +7,7 @@
  */
 
 import React, {Component} from 'react';
-import {AppRegistry, Platform, StyleSheet, Text, View, Animated} from 'react-native';
+import {AppRegistry, Platform, StyleSheet, Text, TextInput, View, Animated} from 'react-native';
 import Component1 from './app/components/component1/Component1'
 import { API_KEY } from './utils/WeatherAPIKey';
 import CurrentWeatherComponent from './app/components/weathercomponents/CurrentWeatherComponent';
@@ -42,7 +42,22 @@ export default class brogramming_weather extends Component {
 
   fetchWeather(lat, long) {
     fetch(
-      `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&APPID=${API_KEY}&units=metric`
+      `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&APPID=${API_KEY}&units=imperial`
+    )
+      .then(res => res.json())
+      .then(json => {
+        console.log(json);
+        this.setState({
+          temperature: json.main.temp,
+          weatherCondition: json.weather[0].main,
+          isLoading: false
+        })
+      });
+  }
+
+  fetchWeatherByCity(cityName) {
+    fetch(
+      `http://api.openweathermap.org/data/2.5/weather?q=${cityName}&APPID=${API_KEY}&units=imperial`
     )
       .then(res => res.json())
       .then(json => {
