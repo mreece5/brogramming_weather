@@ -19,12 +19,16 @@ const instructions = Platform.select({
     'Shake or press menu button for dev menu',
 });
 
+
 export default class brogramming_weather extends Component {
 
   state = {
     isLoading: true,
     temperature: 0,
     weatherCondition: null,
+    sunrise: 0,
+    sunset:0,
+    current: 0,
     error: null
   };
 
@@ -50,6 +54,9 @@ export default class brogramming_weather extends Component {
         this.setState({
           temperature: json.main.temp,
           weatherCondition: json.weather[0].main,
+          sunrise: json.sys.sunrise,
+          sunset: json.sys.sunset,
+          current: json.dt,
           isLoading: false
         })
       });
@@ -65,19 +72,25 @@ export default class brogramming_weather extends Component {
         this.setState({
           temperature: json.main.temp,
           weatherCondition: json.weather[0].main,
+          sunrise: json.sys.sunrise,
+          sunset: json.sys.sunset,
+          current: json.dt,
           isLoading: false
         })
       });
   }
 
   render() {
-    const { isLoading, weatherCondition, temperature} = this.state;
+    const { isLoading, weatherCondition, temperature, sunrise, sunset, current} = this.state;
 
     console.log("WEATHER CONDITION!" + weatherCondition);
-    console.log("TEMPERATURE!" + weatherCondition);
+    console.log("TEMPERATURE!" + temperature);
+    console.log("sunrise!" + sunrise);
+    console.log("sunset!" + sunset);
+    console.log("current!" + current);
     return (
       <View style={styles.container}>
-      {isLoading ? <Text>Fetching The Weather...</Text> : <CurrentWeatherComponent weather={weatherCondition} temperature={temperature} />}
+      {isLoading ? <Text>Fetching The Weather...</Text> : <CurrentWeatherComponent weather={weatherCondition} temperature={temperature} sunrise={sunrise} sunset={sunset} current={current} />}
     </View>
     );
   }

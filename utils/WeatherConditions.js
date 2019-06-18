@@ -6,7 +6,7 @@ export const weatherConditions = {
       icon: 'weather-pouring'
     },
     Clear: {
-      color: '#f7b733',
+      color: '#f49242',
       title: 'So Sunny',
       subtitle: 'It is hurting my eyes',
       icon: 'weather-sunny'
@@ -20,7 +20,7 @@ export const weatherConditions = {
     Clouds: {
       color: '#1F1C2C',
       title: 'Clouds',
-      subtitle: 'Everywhere',
+      subtitle: 'Here comes Nimbus!',
       icon: 'weather-cloudy'
     },
   
@@ -58,35 +58,35 @@ export const weatherConditions = {
     Dust: {
       color: '#9A5331',
       title: 'Dust',
-      subtitle: 'Only you can prevent forest fires',
+      subtitle: 'Shield your eyes',
       icon: 'zodiac-aquarius'
     },
 
     Sand: {
       color: '#735331',
       title: 'Sand',
-      subtitle: 'Only you can prevent forest fires',
+      subtitle: 'Avoid the quick type',
       icon: 'hexagon-multiple'
     },
 
     Ash: {
       color: '#323232',
       title: 'Ash',
-      subtitle: 'Only you can prevent forest fires',
+      subtitle: 'Catch\'em all!',
       icon: 'nuke'
     },
 
     Squall: {
       color: '#7500FF',
       title: 'Squall',
-      subtitle: 'Only you can prevent forest fires',
+      subtitle: 'Hold on to something!',
       icon: 'weather-windy'
     },
 
     Tornado: {
       color: '#FF0000',
       title: 'Tornado',
-      subtitle: 'Only you can prevent forest fires',
+      subtitle: 'I believe I can fly!',
       icon: 'skull-crossbones'
     },
   };
