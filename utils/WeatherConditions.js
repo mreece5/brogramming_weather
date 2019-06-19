@@ -6,7 +6,7 @@ export const weatherConditions = {
       icon: 'weather-pouring'
     },
     Clear: {
-      color: '#f49242',
+      color: '#FFC600',
       title: 'So Sunny',
       subtitle: 'It is hurting my eyes',
       icon: 'weather-sunny'

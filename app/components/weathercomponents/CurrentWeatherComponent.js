@@ -10,7 +10,7 @@ import RoadConditionsComponent from '../component1/roadcomponents/RoadConditions
 export default class CurrentWeatherComponent extends React.Component{
 
   static propTypes = {
-    weather: PropTypes.string.isRequired,
+    weather: PropTypes.string,
     temperature: PropTypes.number.isRequired,
     sunrise: PropTypes.number.isRequired,
     sunset: PropTypes.number.isRequired,
